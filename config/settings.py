@@ -315,6 +315,7 @@ LOG_HANDLERS = {
         "maxBytes": 5 * 1024 * 1024,
         "backupCount": 3,
         "encoding": "utf-8",
+        "delay": True,
     },
 }
 
@@ -335,6 +336,7 @@ for name, filename in MODULE_HANDLERS.items():
         "maxBytes": 5 * 1024 * 1024,
         "backupCount": 3,
         "encoding": "utf-8",
+        "delay": True,
     }
 
 LOGGING = {
