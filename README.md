@@ -72,7 +72,7 @@ Flake8 (100%, исключая миграции), isort
 ## 🔧 Установка и локальный запуск
 1. Клонируйте репозиторий
 ````
-git clone https://github.com/nadezhdapopova-spec/FilmDiary.git
+git clone https://github.com/simbarilion/FilmDiary.git
 cd FilmDiary
 ````
 2. Установите зависимости
@@ -606,4 +606,4 @@ Python Developer
 
 📧 nadezhdapopova13@yandex.ru
 
-🔗 GitHub: nadezhdapopova-spec
+🔗 GitHub: simbarilion
