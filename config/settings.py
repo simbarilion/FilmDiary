@@ -92,9 +92,9 @@ DATABASES = {
         "PORT": os.getenv("DB_PORT"),
         "CONN_MAX_AGE": 0,  # закрываем после КАЖДОГО запроса, каждое соединение свежее
         "OPTIONS": {
-            "connect_timeout": 5,  # таймаут подключения, Django ждет подключения к PostgreSQL 5 секунд, а не 30
+            "connect_timeout": 5,  # тайм-аут подключения, Django ждет подключения к PostgreSQL 5 секунд, а не 30
             "keepalives": 1,
-            "keepalives_idle": 30,
+            "keepalives_idle": 30, # интервал бездействия, после которого будет отправлена первая проверка keepalive
             "keepalives_interval": 5,
             "keepalives_count": 3,
         },
@@ -227,7 +227,7 @@ CELERY_BROKER_URL = os.getenv("CELERY_BROKER_URL")
 CELERY_RESULT_BACKEND = os.getenv("CELERY_RESULT_BACKEND")
 CELERY_TIMEZONE = "UTC"
 CELERY_ENABLE_UTC = True
-CELERY_TASK_TRACK_STARTED = True
+CELERY_TASK_TRACK_STARTED = True  # включает отслеживание того, когда задача начала выполняться
 CELERY_TASK_TIME_LIMIT = 30 * 60
 
 CELERY_BEAT_SCHEDULE = {

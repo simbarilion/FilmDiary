@@ -107,7 +107,7 @@ class ResendActivationView(FormView):
     def form_valid(self, form):
         """
         Если аккаунт пользователя не активирован,
-        отправляет повторное письмо для активации (не чаще одного паза в две минуты)
+        отправляет повторное письмо для активации (не чаще одного раза в две минуты)
         """
         user = form.user
         last = self.request.session.get(f"last_resend_{user.pk}")
