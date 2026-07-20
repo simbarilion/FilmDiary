@@ -94,7 +94,7 @@ DATABASES = {
         "OPTIONS": {
             "connect_timeout": 5,  # тайм-аут подключения, Django ждет подключения к PostgreSQL 5 секунд, а не 30
             "keepalives": 1,
-            "keepalives_idle": 30, # интервал бездействия, после которого будет отправлена первая проверка keepalive
+            "keepalives_idle": 30,  # интервал бездействия, после которого будет отправлена первая проверка keepalive
             "keepalives_interval": 5,
             "keepalives_count": 3,
         },
